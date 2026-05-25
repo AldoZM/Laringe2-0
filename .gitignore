@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+*.wav
+*.egg-info/
+.pytest_cache/
+model/phoneme_classifier.tflite
+*.DS_Store
