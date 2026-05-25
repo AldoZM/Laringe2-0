@@ -1,0 +1,40 @@
+LISTA DE COMPRAS — LARINGOFONO
+TIENDA: UNITELECTRONICS
+FECHA: 2026-05-25
+
+========================================
+COMPONENTES ELECTRONICOS
+========================================
+
+[ ] LM358N  (op-amp DIP-8)               x1    ~$12 MXN
+[ ] Resistencia 10k ohm 1/4W              x3    ~$3 MXN
+[ ] Resistencia 390k ohm 1/4W             x1    ~$2 MXN
+[ ] Resistencia 1k ohm 1/4W               x1    ~$1 MXN
+[ ] Capacitor electrolitico 10uF 25V      x1    ~$3 MXN
+[ ] Capacitor ceramico 47nF (47n / 473)   x1    ~$2 MXN
+[ ] Modulo PAM8403 amplificador audio     x1    ~$30 MXN
+[ ] Bocina 8 ohm 1W                       x1    ~$16 MXN
+
+========================================
+PROTOTIPO / CONEXIONES
+========================================
+
+[ ] Protoboard / Breadboard 830 puntos    x1    ~$40 MXN
+[ ] Cables jumper macho-macho 65pcs       x1    ~$40 MXN
+
+========================================
+RASPBERRY PI
+========================================
+
+[ ] Memoria SD card 32GB (clase 10 / A1) x1    ~$120 MXN
+
+========================================
+TOTAL ESTIMADO: ~$269 MXN
+========================================
+
+NOTAS:
+- Capacitor ceramico 47nF puede estar marcado como "47n" o "473"
+- LM358 debe ser DIP-8 (no SMD)
+- PAM8403 buscar como "mini amplificador 5V" o "PAM8403 modulo"
+- Si no hay bocina 8 ohm 1W, sirve cualquier bocina 8 ohm >= 0.5W
+- SD card: minimo clase 10, recomendado A1 o A2 para mejor rendimiento RPi
