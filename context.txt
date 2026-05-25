@@ -161,7 +161,27 @@ SESION 2026-05-24
 - Vocabulario: fonemas completos ingles (~44), modelo multi-usuario
 - Diseño circuito acondicionamiento completo — validado
 - Todos los conceptos del circuito explicados al usuario
-- Siguiente: bloque ESP32 (como muestrea y que manda a RPi)
+- Spec formal escrito y aprobado
+- Plan de implementacion 14 tareas escrito
+- TODO el codigo Python RPi escrito y en GitHub:
+    serial_receiver.py, preprocessor.py, inferencer.py, tts_engine.py, main.py
+    + tests para cada modulo (18 tests total)
+- Firmware ESP32 completo: firmware/esp32/esp32.ino
+- Repo GitHub conectado: https://github.com/AldoZM/Laringe2-0
+- lista_compras.txt creada y en repo
+- Arduino IDE instalado + board package "esp32 by Espressif Systems" instalado
+- Cuenta Edge Impulse creada
+- SD card: NO disponible aun — pendiente comprar
+- Componentes electronicos: NO comprados aun — ir a UNITELECTRONICS
+
+BLOQUEADOR ACTUAL: falta comprar componentes + SD card en UNITELECTRONICS
+
+---
+PROXIMA SESION — POR DONDE ARRANCAR:
+1. Leer este context.txt
+2. Verificar que componentes ya se compraron
+3. Si si: arrancar Task 2 del plan (armar circuito breadboard)
+4. Plan completo en: docs/superpowers/plans/2026-05-24-laringofono-implementation.md
 
 ---
 DECISIONES TOMADAS
@@ -171,18 +191,33 @@ DECISIONES TOMADAS
 [x] Salida prototipo: bocina integrada (BT a celular = fase futura)
 [x] Circuito acondicionamiento: LM358 + componentes (~$23 MXN)
 [x] Ganancia amplificador: 40x (Rf=390kOhm, Rin=10kOhm)
-[x] Sampling rate objetivo: 8-16kHz
+[x] Sampling rate objetivo: 8kHz
 [x] Filtro anti-aliasing: fc=3.4kHz (Rout=1kOhm, Cout=47nF)
+[x] Repo GitHub: https://github.com/AldoZM/Laringe2-0
+[x] Amplificador audio: PAM8403 mini modulo 5V con potenciometro
+[x] Dataset tool: Edge Impulse Studio (gratuito)
+[x] SD card: minimo 16GB clase 10 (no necesariamente 32GB)
+[x] Git rule: NUNCA incluir nombre IA en commits
 
 ---
 PENDIENTES
-[ ] Bloque ESP32: ADC config, buffer, protocolo envio a RPi
-[ ] Bloque RPi 5: pipeline Python, MFCC, TFLite, Piper TTS
-[ ] Estrategia recoleccion dataset
-[ ] Entrenamiento modelo (Edge Impulse o TFLite manual)
-[ ] Lista completa de compras (bocina, PAM8403, SD card, etc.)
-[ ] Spec document formal
-[ ] Plan de implementacion
+[x] Spec document formal
+[x] Plan de implementacion (14 tareas)
+[x] Codigo Python RPi completo + tests
+[x] Firmware ESP32 completo
+[x] Arduino IDE + board ESP32 instalado
+[x] Cuenta Edge Impulse creada
+[ ] Comprar componentes UNITELECTRONICS (ver lista_compras.txt)
+[ ] Comprar SD card >= 16GB clase 10
+[ ] Armar circuito breadboard (Task 2 del plan)
+[ ] Verificar circuito con multimetro (Task 3)
+[ ] Subir firmware a ESP32 (Task 4)
+[ ] Setup RPi 5 — flashear SD, instalar dependencias (Task 5)
+[ ] Verificar pipeline ESP32 -> RPi (Task 8)
+[ ] Recolectar dataset Edge Impulse (Task 9)
+[ ] Entrenar modelo (Task 10)
+[ ] Copiar .tflite a RPi y probar inferencia (Task 11)
+[ ] Prueba end-to-end completa (Task 14)
 
 ---
 ACTUALIZACIONES FUTURAS
